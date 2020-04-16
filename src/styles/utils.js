@@ -13,4 +13,9 @@ export const utils = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  divider: {
+    borderBottomColor: '#444',
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    marginVertical: 24,
+  },
 });
