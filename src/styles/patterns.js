@@ -15,6 +15,6 @@ export const patterns = StyleSheet.create({
     paddingVertical: 24,
     paddingHorizontal: 32,
     marginBottom: 8,
-    backgroundColor: colors.highlightSecondary,
+    backgroundColor: colors.backgroundSecondary,
   },
 });

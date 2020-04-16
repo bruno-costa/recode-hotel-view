@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, Text, StyleSheet, ImageBackground} from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
-import Entypo from 'react-native-vector-icons/Entypo';
 
 import {colors, utils} from '../../../../styles';
 
