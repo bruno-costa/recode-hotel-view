@@ -1,10 +1,11 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text} from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import Entypo from 'react-native-vector-icons/Entypo';
 
-import {colors, utils, patterns} from '../../../../styles';
+import {colors, utils} from '../../../../styles';
 import Circle from './Circle';
+import styles from './styles';
 
 const starColors = ['#e3ab53', '#e3ab53', '#e3ab53', '#e3ab53', '#8b6f43'];
 
@@ -53,35 +54,3 @@ export default function Stats() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    ...patterns.sectionContainer,
-    ...utils.rowCenter,
-  },
-  weatherContainer: {
-    ...utils.rowCenter,
-    paddingRight: 12,
-    marginRight: 12,
-    borderRightColor: '#444',
-    borderRightWidth: StyleSheet.hairlineWidth,
-  },
-  weatherTextContainer: {
-    marginLeft: 8,
-  },
-  title: {
-    color: colors.text,
-    fontSize: 18,
-    fontWeight: '800',
-  },
-  subtitle: {
-    color: colors.textSecondary,
-    fontSize: 10,
-    fontWeight: '800',
-  },
-  circlesContainer: {
-    flex: 1,
-    flexDirection: 'row',
-    justifyContent: 'flex-end',
-  },
-});

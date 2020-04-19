@@ -1,9 +1,10 @@
 import React from 'react';
-import {View, Text, StyleSheet, TouchableOpacity, Image} from 'react-native';
+import {View, Text, TouchableOpacity, Image} from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
 
 import {colors, patterns} from '../../../../styles';
 import Pin from './Pin';
+import styles from './styles';
 
 const imgSrc =
   'https://maps.googleapis.com/maps/api/staticmap?center=-23.573974357945307%2C-46.64269789540958&zoom=15&size=600x400&style=feature%3Apoi%7Celement%3Alabels%7Cvisibility%3Aoff&maptype=roadmap&key=AIzaSyD4uiaXREZyuJjGpz2eVbaVOxFTkzsJI7I';
@@ -40,42 +41,3 @@ export default function Address() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    justifyContent: 'center',
-  },
-  imageMapContainer: {
-    backgroundColor: '#000',
-  },
-  imageMap: {
-    height: 200,
-    opacity: 0.2,
-  },
-  addressContainer: {
-    ...StyleSheet.absoluteFill,
-    flexDirection: 'row',
-    paddingHorizontal: 32,
-    paddingVertical: 16,
-  },
-  addressContainerText: {
-    marginLeft: 8,
-    marginTop: 24,
-  },
-  addressText: {
-    ...patterns.smallText,
-    marginTop: 6,
-    letterSpacing: 1,
-    lineHeight: 20,
-  },
-  actionButtonContainer: {
-    marginTop: 16,
-  },
-  checkButtonIcon: {
-    marginLeft: 4,
-  },
-  checkButton: {
-    ...patterns.button,
-    alignSelf: 'flex-start',
-  },
-});

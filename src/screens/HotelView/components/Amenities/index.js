@@ -1,11 +1,12 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text} from 'react-native';
 import Feather from 'react-native-vector-icons/Feather';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import Entypo from 'react-native-vector-icons/Entypo';
 
-import {patterns, colors, utils} from '../../../../styles';
+import {patterns, colors} from '../../../../styles';
+import styles from './styles';
 
 export default function Amenities() {
   return (
@@ -69,34 +70,3 @@ export default function Amenities() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    justifyContent: 'center',
-  },
-  amenitiesContainer: {
-    marginTop: 16,
-    marginHorizontal: 16,
-    ...utils.rowBetween,
-    flexWrap: 'wrap',
-  },
-  amenityContainer: {
-    alignItems: 'center',
-    width: 95,
-    marginVertical: 12,
-  },
-  amenity: {
-    width: 48,
-    height: 48,
-    borderRadius: 48 / 2,
-    ...utils.center,
-    backgroundColor: '#444',
-  },
-  amenityName: {
-    color: colors.highlightSecondary,
-    fontSize: 12,
-    fontWeight: '600',
-    marginTop: 6,
-    textAlign: 'center',
-  },
-});

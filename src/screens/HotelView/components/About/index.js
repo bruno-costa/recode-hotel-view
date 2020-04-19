@@ -1,7 +1,8 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text} from 'react-native';
 
-import {colors, utils, patterns} from '../../../../styles';
+import {utils, patterns} from '../../../../styles';
+import styles from './styles';
 
 const hotel = {
   name: 'Mt. Catlin Hotel',
@@ -25,22 +26,3 @@ export default function About() {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    ...patterns.sectionContainer,
-    backgroundColor: colors.background,
-  },
-  info: {
-    color: colors.textSecondary,
-    fontWeight: '600',
-    marginTop: 4,
-  },
-  about: {
-    fontSize: 13,
-    fontWeight: '700',
-    color: colors.textSecondary,
-    marginTop: 6,
-    lineHeight: 20,
-  },
-});

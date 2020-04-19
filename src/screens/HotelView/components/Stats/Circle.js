@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, Text, StyleSheet, ImageBackground} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 import {colors} from '../../../../styles';
 
 export default function Circle(props) {
