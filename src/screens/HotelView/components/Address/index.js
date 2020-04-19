@@ -2,12 +2,14 @@ import React from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
 import Entypo from 'react-native-vector-icons/Entypo';
 
+import {GOOGLE_MAPS_KEY} from '../../../../env';
 import {colors, patterns} from '../../../../styles';
 import Pin from './Pin';
 import styles from './styles';
 
 const imgSrc =
-  'https://maps.googleapis.com/maps/api/staticmap?center=-23.573974357945307%2C-46.64269789540958&zoom=15&size=600x400&style=feature%3Apoi%7Celement%3Alabels%7Cvisibility%3Aoff&maptype=roadmap&key=AIzaSyD4uiaXREZyuJjGpz2eVbaVOxFTkzsJI7I';
+  'https://maps.googleapis.com/maps/api/staticmap?center=-23.573974357945307%2C-46.64269789540958&zoom=15&size=600x400&style=feature%3Apoi%7Celement%3Alabels%7Cvisibility%3Aoff&maptype=roadmap&key=' +
+  GOOGLE_MAPS_KEY;
 
 export default function Address() {
   return (
