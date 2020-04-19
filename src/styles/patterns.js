@@ -17,4 +17,19 @@ export const patterns = StyleSheet.create({
     marginBottom: 8,
     backgroundColor: colors.backgroundSecondary,
   },
+  smallText: {
+    fontSize: 12,
+    fontWeight: '800',
+    color: colors.text,
+  },
+
+  button: {
+    paddingVertical: 8,
+    paddingHorizontal: 16,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: colors.pink,
+    borderRadius: 100,
+  },
 });
